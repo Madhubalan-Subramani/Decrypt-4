@@ -1,4 +1,4 @@
-import type { ScoreResult } from "../types";
+import type { ScoreResult } from "../../types";
 
 export const evaluateGuess = (guess: string, secret: string): ScoreResult => {
   const guessArr = guess.split("");
