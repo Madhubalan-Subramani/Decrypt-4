@@ -91,9 +91,8 @@ export const GuessPanel: React.FC<GuessPanelProps> = ({
     onGuessSubmit(data.guess);
     reset();
 
-    requestAnimationFrame(() => {
-      inputRef.current?.focus();
-    });
+    setIsFocused(false);
+    inputRef.current?.blur();
   };
 
   return (

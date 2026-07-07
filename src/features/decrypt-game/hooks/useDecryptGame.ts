@@ -36,7 +36,7 @@ export const useDecryptGame = () => {
       };
 
       // first attempt first, latest attempt last
-      return [...prev, newAttempt];
+      return [newAttempt, ...prev];
     });
   };
 
